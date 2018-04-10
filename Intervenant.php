@@ -33,19 +33,9 @@
 
               <!-- Sidebar Links -->
               <ul class="list-unstyled components">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-
-                  <li><!-- Link with dropdown items -->
-                      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                      <ul class="collapse list-unstyled" id="homeSubmenu">
-                          <li><a href="#">Page</a></li>
-                          <li><a href="#">Page</a></li>
-                          <li><a href="#">Page</a></li>
-                      </ul>
-
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li class="active"><a href="#">Accueil</a></li>
+                  <li><a href="#">Demandes</a></li>
+                  <li><a href="#">Groupes</a></li>
               </ul>
           </nav>
 
