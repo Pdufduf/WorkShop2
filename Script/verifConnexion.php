@@ -25,13 +25,7 @@ if(isset($_POST['connexion'])) { // si le bouton "Connexion" est appuyé
 
             //on se connecte à la base de données:
             try {
-                $dbName = 'helpcenter';
-                $host = 'localhost';
-                $utilisateur = 'root';
-                $motDePasse = 'root';
-                $port = '3307';
-                $dns = 'mysql:host=' . $host . ';dbname=' . $dbName . ';port=' . $port;
-                $connection = new PDO($dns, $utilisateur, $motDePasse);
+                $pdo = new PDO('mysql:host=localhost;dbname=helpcenter','root','');
             }
             catch ( Exception $e){
                     echo "Connexion à la BDD impossible : ", $e->getMessage();
