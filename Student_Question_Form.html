@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Question Form</title>
+<title>Questionnaire intervenants</title>
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -15,6 +15,8 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="limiter">
@@ -29,18 +31,29 @@
 	Nom du Groupe : <br>
 	<input type="text">
 	<br><br>
-	Prof : <br>
-	<select name="cars">
-		<option value="dummy@email.com">Dummy1</option>
-		<option value="dummy2@email.com">Dummy2</option>
-		<option value="dummy3@email.com">Dummy3</option>
-		<option value="dummy4@email.com">Dummy4</option>
-	</select>
+	Liste des intervenants : <br>
+	<div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Intervenants
+		</button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" >Ligniere Isabelle</a>
+			<a class="dropdown-item" >Boudhoo Prity</a>
+			<a class="dropdown-item" >Bisson Benjamin</a>
+		</div>
+	</div>
 	<br><br>
-	Question : <br>
-		<textarea name="message" rows="10" cols="30">FUCK YOU!!!</textarea>
+	Question :
+	<br>
+		<div class="input-group">
+			<textarea class="form-control" aria-label="Entrez votre question ici"></textarea>
+		</div>
   <br><br>
-  <input type="submit">
+	<div class="container-login100-form-btn">
+		<button class="login100-form-btn" name="envoyer" type="submit">
+			Se connecter
+		</button>
+	</div>
 </form>
 </div>
 </div>
