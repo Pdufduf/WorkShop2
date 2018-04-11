@@ -17,6 +17,9 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/intervenant.css">
 <link href="css/calendar.css" type="text/css" rel="stylesheet" />
+<?php
+  include 'pdo.php';
+?>
 </head>
 <body>
 
