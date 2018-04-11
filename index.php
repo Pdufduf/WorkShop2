@@ -15,7 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title><?php include('Script/bdd.php'); ?></title>
 </head>
 <body>
 	
@@ -32,13 +31,13 @@
 						Se connecter
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Entre votre email">
+					<div class="wrap-input100 validate-input" data-validate = "Entrez votre email">
 						<input class="input100" type="text" name="email" placeholder="Email">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+						<span class="focus-input100" data-placeholder="&#x2709;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Entrer votre mot de passe">
-						<input class="input100" type="password" name="mdp" placeholder="Mot de passe">
+					<div class="wrap-input100 validate-input" data-validate="Entrez votre mot de passe">
+						<input class="input100" type="password" name="pass" placeholder="Mot de passe">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
@@ -56,7 +55,7 @@
 					</div>
 
 					<div class="text-center p-t-90">
-						<a class="txt1" href="/WorkShop2/register.html">
+						<a class="txt1" href="/WorkShop2/register.php">
 							Créer un compte ?
 						</a>
 					</div>

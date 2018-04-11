@@ -21,7 +21,7 @@
 <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
         <div class="wrap-login100">
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" action="Script/inscriptionEleve.php" method="post">
 					<span class="login100-form-logo">
 						<!-- <i class="zmdi zmdi-landscape"></i> -->                        
                         <img src="images/logos/Epsi1.jpeg" alt="EPSI">
@@ -31,13 +31,28 @@
 						Création du compte
 					</span>
 
-                <div class="wrap-input100 validate-input" data-validate = "Entre votre identifiant">
-                    <input class="input100" type="text" name="username" placeholder="Identifiant">
+                <div class="wrap-input100 validate-input" data-validate = "Entrez votre nom">
+                    <input class="input100" type="text" name="nom" placeholder="Nom">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Entrer votre mot de passe">
+                <div class="wrap-input100 validate-input" data-validate = "Entrez votre prenom">
+                    <input class="input100" type="text" name="prenom" placeholder="Prenom">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Email">
+                    <input class="input100" type="email" name="email" placeholder="Email">
+                    <span class="focus-input100" data-placeholder="&#x2709;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Entrez votre mot de passe">
                     <input class="input100" type="password" name="pass" placeholder="Mot de passe">
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Entrez votre mot de passe">
+                    <input class="input100" type="password" name="pass2" placeholder="Mot de passe (Recopier le)">
                     <span class="focus-input100" data-placeholder="&#xf191;"></span>
                 </div>
 
@@ -46,18 +61,13 @@
                     <span class="focus-input100" data-placeholder="&#128197;"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Email">
-                    <input class="input100" type="text" name="email" placeholder="Email">
-                    <span class="focus-input100" data-placeholder="&#x2709;"></span>
-                </div>
-
                 <div class="wrap-input100 validate-input" data-validate="Telephone">
                     <input class="input100" type="text" name="telephone" placeholder="Telephone">
                     <span class="focus-input100" data-placeholder="&#9742;"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Classe">
-                    <input class="input100" type="text" name="class" placeholder="Classe">
+                    <input class="input100" type="text" name="classe" placeholder="Classe">
                     <span class="focus-input100" data-placeholder="&#128211;"></span>
                 </div>
 
@@ -68,7 +78,7 @@
                 </div>
 
                 <div class="text-center p-t-90">
-                    <a class="txt1" href="/WorkShop2/index.html">
+                    <a class="txt1" href="/WorkShop2/index.php">
                         Se connecter ?
                     </a>
                 </div>
