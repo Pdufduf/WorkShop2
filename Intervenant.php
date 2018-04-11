@@ -32,7 +32,7 @@
         <p><a href="#">Groupes</a></p>
 
         <footer>
-          <p><a href="#">Déconnexion</a></p>
+          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
     </div>
 
