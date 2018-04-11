@@ -8,6 +8,7 @@
 
 include "../pdo.php";
 
+
 //On vérifie que l'utilisateur a bien envoyé les informations demandées
 if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["dateNaissance"]) && isset($_POST["pass"])
     && isset($_POST["email"]) && isset($_POST["telephone"]) && isset($_POST["classe"]) && isset($_POST["pass2"])){
@@ -16,12 +17,11 @@ if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["dateNaissanc
         //On utilise alors notre fonction password_hash :
         $hash = password_hash($_POST["pass"], PASSWORD_DEFAULT);
         //Puis on stock le résultat dans la base de données :
-        $query = $bdd->prepare('INSERT INTO etudiant (nom, prenom, dateNaissance, email
-, mdp, telephone, classe) VALUES(:nom, :prenom, :dateNaissance, :email, :pass, :telephone, :classe);');
+        $query = $bdd->prepare('INSERT INTO etudiant SET nom="'.$_POST["nom"].'", prenom="'.$_POST["prenom"].'", dateNaissance="'.$_POST["dateNaissance"].'", email="'.$_POST["email"].'", mdp="'.$_POST["pass"].'", telephone='.$_POST["telephone"].', classe="'.$_POST["classe"].'"');
         $query->bindParam(':email', $_POST["email"]);
         $query->bindParam(':pass', $hash);
         $query->execute();
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit();
     }
 }
