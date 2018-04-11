@@ -21,7 +21,7 @@ if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["dateNaissanc
         $query->bindParam(':email', $_POST["email"]);
         $query->bindParam(':pass', $hash);
         $query->execute();
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit();
     }
 }
