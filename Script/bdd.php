@@ -1,13 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-
-//Création connexion
-$conn = new mysqli($servername, $username, $password);
-
-//Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+//on se connecte à la base de données:
+try {
+$pdo = new PDO('mysql:host=localhost;dbname=helpcenter','root','');
 }
-echo "Connected successfully";
+catch ( Exception $e){
+echo "Connexion à la BDD impossible : ", $e->getMessage();
+die();
+}
