@@ -42,7 +42,7 @@
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       <div id="main" class="custom_main">
         <header>
-          <h1>BIENVENUE</h1>
+          <h1 align="center">BIENVENUE</h1>
         </header>
         <?php
         include 'calendar.php';
