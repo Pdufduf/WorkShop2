@@ -15,37 +15,16 @@
 <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/intervenant.css">
+<link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
 <link href="css/calendar.css" type="text/css" rel="stylesheet" />
 <?php
   include 'pdo.php';
 ?>
 </head>
 <body>
-
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 
-
-      <div class="wrapper">
-
-          <nav id="sidebar">
-              <!-- Sidebar Header -->
-              <div class="sidebar-header">
-                  <h3>Menu</h3>
-              </div>
-
-              <!-- Sidebar Links -->
-              <ul class="list-unstyled components">
-                  <li class="active"><a href="#">Accueil</a></li>
-                  <li><a href="#">Demandes</a></li>
-                  <li><a href="#">Groupes</a></li>
-              </ul>
-          </nav>
-
-      </div>
-
-
-      <!-- <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <p><a href="#">Accueil</a></p>
@@ -55,7 +34,7 @@
         <footer>
           <p><a href="#">Déconnexion</a></p>
         </footer>
-      </div> -->
+    </div>
 
       <!-- Use any element to open the sidenav -->
       <!--<span onclick="openNav()">open</span>-->
