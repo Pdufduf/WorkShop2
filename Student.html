@@ -21,8 +21,9 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-  <p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
-  <p><a href="#">Groupe</a></p>
+	<p><a href="Student.html">Home</a></p>
+	<p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
+	<p><a href="Student_Groups.html">Groupe</a></p>
 </div>
 
 <!-- Use any element to open the sidenav -->
