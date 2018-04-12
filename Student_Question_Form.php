@@ -29,7 +29,7 @@
         <p><a href="Student_Groups.php">Groupes</a></p>
 
         <footer>
-          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
+            <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
     </div>
 
