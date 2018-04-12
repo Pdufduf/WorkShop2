@@ -25,12 +25,12 @@
 	<p><a href="Resp_Etudiant.php">Accueil</a></p>
 	<p><a href="gestion_intervenant.php">Gestion intervenant</a></p>
 	<p><a href="gestion_des_jetons.php">Gestion des jetons</a></p>
-	
+
 	<footer>
         <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
     </footer>
 </div>
-<p>ACCUEIL<p><br><br><br><br>
+    <p>ACCUEIL</p><br><br><br><br>
 </table>
 </div>
 </div>

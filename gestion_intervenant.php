@@ -30,22 +30,23 @@
     </footer>
 </div>
 <div class="main">
-<B><U>CREATION D'UN INTERVENANT</U></B>
-<br><br><br><br>
-<form>
-	Nom du profs : <br>
+    <div class="h3">
+        CREATION D'UN INTERVENANT
+    </div>
+<form style="padding-top: 40px;">
+    <div class="h5">Nom du profs :</div>
 	<input type="text">
 	<br><br>
-	Prenom du profs : <br>
+        <div class="h5">Prenom du profs :</div>
 	<input type="text">
 	<br><br>
-	matiere enseigné : <br>
+            <div class="h5">matiere enseigné :</div>
 	<input type="text">
-  <br><br>	
-  adresse e-mail  : <br>
+  <br><br>
+                <div class="h5">adresse e-mail  : </div>
 	<input type="text">
 	<br><br>
-	mots de passe de connexion : <br>
+                    <div class="h5">mots de passe de connexion : </div>
 	<input type="text">
 	<br><br>
   <input type="submit">

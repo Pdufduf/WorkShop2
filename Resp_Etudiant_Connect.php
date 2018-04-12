@@ -49,7 +49,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" name="connexion" type="submit" onclick="windowlocation.href='Resp_Etudiant.php'">
+						<button class="login100-form-btn" name="connexion" type="submit">
 							Se connecter
 						</button>
 					</div>
