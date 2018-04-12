@@ -19,12 +19,17 @@
 <body>
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-<div class="sidenav">
-  <p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
-  <p><a href="#">Groupe</a></p>
-  <p><a href="#">Clients</a></p>
-  <a href="#">Contact</a>
-</div>
+    <div id="mySidenav" class="sidenav">
+        <h1>MENU</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p><a href="Student.html">Accueil</a></p>
+        <p><a href="Student_Question_Form.html">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.html">Groupes</a></p>
+
+        <footer>
+          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
+        </footer>
+    </div>
 
 <div class="main">
 <form>
@@ -40,7 +45,7 @@
 	</select>
 	<br><br>
 	Question : <br>
-		<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+		<textarea name="message" rows="10" cols="30"></textarea>
   <br><br>
   <input type="submit">
 </form>
