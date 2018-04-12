@@ -30,17 +30,17 @@
 </head>
 <body>
 	<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-	
-    <div id="mySidenav" class="sidenav">
-        <h1>MENU</h1>
-        <p><a href="#">Accueil</a></p>
-        <p><a href="#">Demandes</a></p>
-        <p><a href="#">Groupes</a></p>
 
-        <footer>
-          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
-        </footer>
-    </div>
+        <div id="mySidenav" class="sidenav">
+            <h1 style="margin-left: 30px;">MENU</h1>
+            <p><a href="Intervenant.php">Accueil</a></p>
+            <p><a href="Intervenant_Reception_Question.php">Demandes</a></p>
+            <p><a href="Intervenant_Groupes.php">Groupes</a></p>
+
+            <footer>
+                <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
+            </footer>
+        </div>
         <div id="main">
             <div class="profil">
                 <?php
@@ -48,47 +48,39 @@
                 echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
                 ?>
             </div>
-            <p class="lead" style="margin-left: 200px;">
-                Bienvenue sur la page Intervenant ! <br/>
-                Vous pouvez ici rejoindre un groupe de projet qui a été créée au préalable <br/> par votre Responsable
-                Etudiant. Une fois un groupe rejoint, vous pourrez <br/> ensuite contacter des intervenants afin de leur
-                poser des questions sur votre projet. <br/>
-                Gérez bien vos jetons !
-            </p>
-            <table class="table table-inbox table-hover">
-                <tbody>
-                <tr class="unread">
-                    <td class="inbox-small-cells">
-                        <input type="checkbox" class="mail-checkbox">
-                    </td>
-                    <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                    <td class="view-message  dont-show">Groupe 1</td>
-                    <td class="view-message ">Reponse pour le groupe 1</td>
-                    <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                    <td class="view-message  text-right">9:27 AM</td>
-                </tr>
-                <tr class="unread">
-                    <td class="inbox-small-cells">
-                        <input type="checkbox" class="mail-checkbox">
-                    </td>
-                    <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                    <td class="view-message dont-show">Groupe 2</td>
-                    <td class="view-message">Reponse pour le groupe 2</td>
-                    <td class="view-message inbox-small-cells"></td>
-                    <td class="view-message text-right">March 15</td>
-                </tr>
-                <tr class="">
-                    <td class="inbox-small-cells">
-                        <input type="checkbox" class="mail-checkbox">
-                    </td>
-                    <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                    <td class="view-message dont-show">Groupe 4</td>
-                    <td class="view-message">Reponse pour le groupe 4 </td>
-                    <td class="view-message inbox-small-cells"></td>
-                    <td class="view-message text-right">March 15</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="">
+            <?php
+            //Connexion à la base de données
+            //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
+            $pdo = new PDO(
+                'mysql:host=localhost;dbname=helpcenter', 'root', '');
+
+            //Sélection nom, prenom connexion
+            $listeDemande = $pdo->prepare('SELECT * FROM demande');
+            $listeDemande->execute();
+            ?>
+                <div style="overflow-x:auto;">
+                    <table style="width:100%; text-overflow: ellipsis; word-wrap: break-word; ">
+                        <tr>
+                            <th> Sujet du problème </th>
+                            <th style="padding-left: 10px;"> Description </th>
+                            <th style="padding-left: 10px;"> Nom du groupe </th>
+                        </tr>
+                        <?php while ($resultDemande = $listeDemande->fetch()) { ?>
+                        <tr>
+                            <td style="padding-top: 20px;"> <?php echo $resultDemande['type']; ?> </td>
+                            <td style="padding-left: 10px; padding-top: 20px; width:300px; text-overflow: ellipsis; word-wrap: break-word;"> <?php echo $resultDemande['texte']; ?> </td>
+                            <td style="padding-left: 10px;padding-top: 20px; ">
+                                <?php
+                                    $nomGroupe = $pdo->prepare('SELECT nom FROM groupe g JOIN demande d ON g.id=d.groupeId WHERE g.id =' . "$resultDemande[groupeId]");
+                                    $nomGroupe->execute();
+                                    $nomDuGroupe = $nomGroupe->fetch();
+                                    echo $nomDuGroupe[0];
+                                } ?>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
         </div>
 	</div>
 </body>

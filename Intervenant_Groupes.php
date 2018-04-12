@@ -35,51 +35,31 @@
     </div>
     <div id="Main" class="main">
     <div style="overflow-x:auto;">
-    <table style="width:100%">
-        <tr>
-            <th> Groupe </th>
-            <th> Remplissage </th>
-            <th> Noms </th>
-            <th> Rejoindre </th>
-        </tr>
-        <tr>
-            <td>Groupe 1</td>
-            <td>0/4</td>
-            <td> Billy, Bobby, Jimmy, Carl </td>
-            <td> Button Place Holder </td>
-        </tr>
-        <tr>
-            <td>Groupe 2</td>
-            <td>0/4</td>
-            <td> Billy, Bobby, Jimmy, Carl </td>
-            <td> Button Place Holder </td>
-        </tr>
-        <tr>
-            <td>Groupe 3</td>
-            <td>0/4</td>
-            <td> Billy, Bobby, Jimmy, Carl </td>
-            <td> Button Place Holder </td>
-        </tr>
-        <tr>
-            <td>Groupe 4</td>
-            <td>0/4</td>
-            <td> Billy, Bobby, Jimmy, Carl </td>
-            <td> Button Place Holder </td>
-        </tr>
-        <tr>
-            <td>Groupe 5</td>
-            <td>0/4</td>
-            <td> Billy, Bobby, Jimmy, Carl </td>
-            <td> Button Place Holder </td>
-        </tr>
+        <div class="">
+            <?php
+            //Connexion à la base de données
+            //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
+            $pdo = new PDO(
+                'mysql:host=localhost;dbname=helpcenter', 'root', '');
 
-    </table>
-    <button class="login100-form-btn" name="envoyer" type="submit">
-            Cree Groupe
-    </button>
-    <button class="login100-form-btn" name="envoyer" type="submit">
-            Effacer Groupe
-    </button>
+            //Sélection nom, prenom connexion
+            $listeGroupe = $pdo->prepare('SELECT * FROM groupe');
+            $listeGroupe->execute();
+            ?>
+                <table style="width:100%; text-overflow: ellipsis; word-wrap: break-word; ">
+                    <tr>
+                        <th> Nom </th>
+                        <th style="padding-left: 10px;"> Nombre d'étudiant </th>
+                        <th style="padding-left: 10px;"> Jetons restants </th>
+                    </tr>
+                    <?php while ($resultGroupe = $listeGroupe->fetch()) { ?>
+                    <tr>
+                        <td style="padding-top: 20px;"> <?php echo $resultGroupe['nom']; ?> </td>
+                        <td style="padding-left: 10px; padding-top: 20px;"> <?php echo $resultGroupe['nbreEtudiant']; ?> </td>
+                        <td style="padding-left: 10px;padding-top: 20px;"> <?php echo $resultGroupe['nbreJeton']; }?> </td>
+                    </tr>
+                </table>
+        </div>
     </div>
     </div>
 </body>
