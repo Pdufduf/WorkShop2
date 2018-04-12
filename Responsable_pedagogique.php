@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Responsable pedagogique</title>
+<title>Responsable étudiant</title>
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -21,43 +21,18 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
+<<<<<<< HEAD:Responsable_pedagogique.php
+	<p><a href="projet.html">projet</a></p>
+	<p><a href="gestion_intervenant.html">gestion intervenants</a></p>
+	<p><a href="gestion_des_jetons.html">gestion des jetons</a></p>
+	
+	<footer>
+          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
+        </footer>
 	<p><a href="projet.php">projet</a></p>
 	<p><a href="gestion_intervenant.php">gestion intervenant</a></p>
 </div>
-<div class="main">
-<div style="overflow-x:auto;">
-<table style="width:100%">
-	<tr>
-		<th> Groupe </th>
-		<th> Remplissage </th>
-		<th> Join </th>
-	</tr>
-	<tr>
-		<td>Group 1</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Group 2</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Group 3</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Group 4</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Group 5</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-		
+<p>ACCUEIL<p><br><br><br><br>
 </table>
 </div>
 </div>

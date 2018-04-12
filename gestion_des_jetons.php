@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gestion intervenant</title>
+<title>Gestion des jetons </title>
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -29,28 +29,24 @@
         <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
     </footer>
 </div>
-<div class="main">
-<B><U>CREATION D'UN INTERVENANT</U></B>
-<br><br><br><br>
+<div class="main">	
+<B><U>Attribué des jetons</B></U>
+<br><br><br><br><br><br><br><br>
 <form>
-	Nom du profs : <br>
+	Nom du groupe : <br>
+	<input type="text">
+	<br><br>	
+  adresse e-mail chef d'equipe  : <br>
 	<input type="text">
 	<br><br>
-	Prenom du profs : <br>
-	<input type="text">
-	<br><br>
-	matiere enseigné : <br>
-	<input type="text">
-  <br><br>	
-  adresse e-mail  : <br>
-	<input type="text">
-	<br><br>
-	mots de passe de connexion : <br>
+	nombres de jetons à attribué : <br>
 	<input type="text">
 	<br><br>
   <input type="submit">
 </form>
+</form>
+</div>
+</div>
 </div>
 </body>
-
 </html>
