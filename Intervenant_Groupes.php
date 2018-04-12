@@ -35,8 +35,11 @@
     </div>
     <div id="Main" class="main">
     <div style="overflow-x:auto;">
-        <div class="">
+        <div class="profil">
             <?php
+            session_start ();
+            echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+
             //Connexion à la base de données
             //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
             $pdo = new PDO(
@@ -46,6 +49,8 @@
             $listeGroupe = $pdo->prepare('SELECT * FROM groupe');
             $listeGroupe->execute();
             ?>
+        </div>
+       <div>
                 <table style="width:100%; text-overflow: ellipsis; word-wrap: break-word; ">
                     <tr>
                         <th> Nom </th>
