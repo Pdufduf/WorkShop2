@@ -22,36 +22,32 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-  <p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
-  <p><a href="#">Groupe</a></p>
+	<p><a href="Student.html">Home</a></p>
+	<p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
+	<p><a href="Student_Groups.html">Groupe</a></p>
 </div>
 
 <div class="main">
 <form>
-	Nom du Groupe : <br>
-	<input type="text">
-	<br><br>
-	Liste des intervenants : <br>
-	<div class="dropdown">
-		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Intervenants
-		</button>
-		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			<a class="dropdown-item" >Ligniere Isabelle</a>
-			<a class="dropdown-item" >Boudhoo Prity</a>
-			<a class="dropdown-item" >Bisson Benjamin</a>
-		</div>
-	</div>
-	<br><br>
-	Question :
+    <div class="h5"> Nom du Groupe : </div>
+    <input type="text" class="form-control" id="nomGroupe" placeholder="Entrez votre groupe">
 	<br>
+    <div class="h5"> Liste des intervenants : </div>
+	<select name="intervenants" class="btn btn-secondary dropdown-toggle">
+		<option class="dropdown-item" value="dummy@email.com">Dummy1</option>
+		<option class="dropdown-item" value="dummy2@email.com">Dummy2</option>
+		<option class="dropdown-item" value="dummy3@email.com">Dummy3</option>
+		<option class="dropdown-item" value="dummy4@email.com">Dummy4</option>
+	</select>
+	<br/><br/>
+    <div class="h5"> Question : </div>
 		<div class="input-group">
 			<textarea class="form-control" aria-label="Entrez votre question ici"></textarea>
 		</div>
-  <br><br>
+  <br>
 	<div class="container-login100-form-btn">
 		<button class="login100-form-btn" name="envoyer" type="submit">
-			Se connecter
+			Envoyer question
 		</button>
 	</div>
 </form>

@@ -15,23 +15,52 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
+<link rel="stylesheet" type="text/css" href="css/Tables.css">
 </head>
 <body>
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-  <p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
-  <p><a href="#">Groupe</a></p>
+	<p><a href="Student.html">Home</a></p>
+	<p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
+	<p><a href="Student_Groups.html">Groupe</a></p>
 </div>
 <div class="main">
+<div style="overflow-x:auto;">
 <table style="width:100%">
 	<tr>
 		<th> Groupe </th>
 		<th> Remplissage </th>
-		<th> Join </th>
+		<th> Rejoindre </th>
 	</tr>
 	<tr>
-		<td>
+		<td>Groupe 1</td>
+		<td>0/4</td>
+		<td> Button Place Holder </td>
+	</tr>
+	<tr>
+		<td>Groupe 2</td>
+		<td>0/4</td>
+		<td> Button Place Holder </td>
+	</tr>
+	<tr>
+		<td>Groupe 3</td>
+		<td>0/4</td>
+		<td> Button Place Holder </td>
+	</tr>
+	<tr>
+		<td>Groupe 4</td>
+		<td>0/4</td>
+		<td> Button Place Holder </td>
+	</tr>
+	<tr>
+		<td>Groupe 5</td>
+		<td>0/4</td>
+		<td> Button Place Holder </td>
+	</tr>
+
+</table>
+</div>
 </div>
 </body>
 
