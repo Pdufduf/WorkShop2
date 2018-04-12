@@ -34,8 +34,10 @@
 
 <div id="Main" class="main">
     <div style="overflow-x:auto;">
-        <div class="">
+        <div class="profil">
             <?php
+            session_start ();
+
             //Connexion à la base de données
             //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
             $pdo = new PDO(
@@ -44,7 +46,11 @@
             //Sélection nom, prenom connexion
             $listeGroupe = $pdo->prepare('SELECT * FROM groupe');
             $listeGroupe->execute();
+
+            echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
             ?>
+        </div>
+        <div>
                 <table style="width:100%; text-overflow: ellipsis; word-wrap: break-word; ">
                     <tr>
                         <th> Nom </th>
@@ -55,20 +61,38 @@
                     <tr>
                         <td style="padding-top: 20px;"> <?php echo $resultGroupe['nom']; ?> </td>
                         <td style="padding-left: 10px; padding-top: 20px;"> <?php echo $resultGroupe['nbreEtudiant']; ?> </td>
-                        <td style="padding-left: 10px;padding-top: 20px;"> <?php echo $resultGroupe['nbreJeton']; }?> </td>
+                        <td style="padding-left: 10px;padding-top: 20px;"> <?php echo $resultGroupe['nbreJeton'];?> </td>
+                        <td style="padding-left: 10px;padding-top: 20px;">
+                            <div class="container-login100-form-btn">
+                                <button class="login100-form-btn" name="delete">
+                                    Effacer Groupe
+                                </button>
+                            </div>
+                        </td>
+                        <?php }?>
                     </tr>
                 </table>
         </div>
-        <div class="container-login100-form-btn" style="padding-top: 50px;">
+
+        <form style="padding-top: 40px;" class="login100-form validate-form" action="Script/addGroup.php" method="post">
+        <div class="wrap-input100 validate-input" data-validate="Nom" style="border-bottom: 2px solid black;">
+            <input class="input100" type="nom" name="nom" placeholder="Nom du groupe" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate="Nombre d'étudant" style="border-bottom: 2px solid black;">
+            <input class="input100" type="nbreEtudiant" name="nbreEtudiant" placeholder="Nombre d'étudiants" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate="Nombre de jeton" style="border-bottom: 2px solid black;">
+            <input class="input100" type="nbreJeton" name="nbreJeton" placeholder="Nombre de jeton(s)" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="container-login100-form-btn" style="padding-top: 10px;">
 			<button class="login100-form-btn" name="create" type="submit" >
 				Créer Groupe
 			</button>
 		</div>
-		<div class="container-login100-form-btn" style="padding-top: 50px;">            
-		    <button class="login100-form-btn" name="delete" type="submit">
-		            Effacer Groupe
-		    </button>
-		</div>
+        </form>
  </div>
 </body>
 </html>
