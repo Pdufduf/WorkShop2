@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gestion intervenant</title>
+<title>Responsable étudiant</title>
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -15,39 +15,23 @@
 <link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
+<link rel="stylesheet" type="text/css" href="css/Tables.css">
 </head>
 <body>
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-	<p><a href="Responsable_pedagogique.php">Accueil</a></p>
-	<p><a href="projet.php">projet</a></p>
+	<p><a href="projet.html">projet</a></p>
+	<p><a href="gestion_intervenant.html">gestion intervenants</a></p>
+	<p><a href="gestion_des_jetons.html">gestion des jetons</a></p>
 	
 	<footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
 </div>
-<div class="main">
-<B><U>CREATION D'UN INTERVENANT</U></B>
-<br><br><br><br>
-<form>
-	Nom du profs : <br>
-	<input type="text">
-	<br><br>
-	Prenom du profs : <br>
-	<input type="text">
-	<br><br>
-	matiere enseigné : <br>
-	<input type="text">
-  <br><br>	
-  adresse e-mail  : <br>
-	<input type="text">
-	<br><br>
-	mots de passe de connexion : <br>
-	<input type="text">
-	<br><br>
-  <input type="submit">
-</form>
+<p>ACCUEIL<p><br><br><br><br>
+</table>
+</div>
 </div>
 </body>
 
