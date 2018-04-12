@@ -28,7 +28,7 @@
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Se connecter
+						Se connecter en Responsable
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Entrez votre email">
@@ -46,12 +46,6 @@
 						<label class="label-checkbox100" for="ckb1">
 							Se souvenir de moi
 						</label>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" name="connexion" type="submit" onclick="windowlocation.href='Resp_Etudiant.php'">
-							Se connecter
-						</button>
 					</div>
 
 					<div class="text-center p-t-90">

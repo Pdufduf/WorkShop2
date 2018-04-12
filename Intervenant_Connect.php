@@ -28,7 +28,7 @@
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Se connecter
+						Se connecter en Intervenant
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Entrez votre email">
@@ -52,12 +52,6 @@
 						<button class="login100-form-btn" name="connexion" type="submit" onclick="windowlocation.href='Intervenant.php'">
 							Se connecter
 						</button>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="/WorkShop2/register.php">
-							Créer un compte ?
-						</a>
 					</div>
 
 					<div class="text-center p-t-90">
