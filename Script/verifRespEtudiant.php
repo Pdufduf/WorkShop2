@@ -21,9 +21,9 @@ if(isset($_POST["email"]) && isset($_POST["pass"])){
     $hash = $result[0];
 
     //Nous vérifions si le mot de passe utilisé correspond bien à ce hash à l'aide de password_verify :
-    $correctPassword = ($_POST["email"]);
+    $correctPassword = $hash;
     //password_verify($_POST["pass"], $hash);
-    if($correctPassword){
+    if($correctPassword == ($_POST["pass"])){
         //Si oui nous accueillons l'utilisateur identifié
         echo "Bienvenue ".$_POST["email"];
         // On démarre la session AVANT d'écrire du code HTML

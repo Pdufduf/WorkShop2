@@ -22,7 +22,6 @@
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
     <div id="mySidenav" class="sidenav">
         <h1 style="margin-left: 30px;">MENU</h1>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <p><a href="Student.php">Accueil</a></p>
         <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
         <p><a href="Student_Groups.php">Groupes</a></p>
@@ -32,12 +31,21 @@
         </footer>
     </div>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()">open</span>
-
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
-Filler
+    <div class="profil">
+        <?php
+        session_start ();
+        echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+        ?>
+    </div>
+    <p class="lead" style="margin-left: 200px;">
+        Bienvenue sur la page Etudiante ! <br/>
+        Vous pouvez ici rejoindre un groupe de projet qui a été créée au préalable <br/> par votre Responsable
+        Etudiant. Une fois un groupe rejoint, vous pourrez <br/> ensuite contacter des intervenants afin de leur
+        poser des questions sur votre projet. <br/>
+        Gérez bien vos jetons !
+    </p>
 </div>
 
 </body>

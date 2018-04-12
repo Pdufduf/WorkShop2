@@ -23,7 +23,6 @@
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
     <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <p><a href="Student.php">Accueil</a></p>
         <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
         <p><a href="Student_Groups.php">Groupes</a></p>
