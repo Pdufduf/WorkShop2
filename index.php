@@ -61,7 +61,7 @@
 					</div>
 
 					<div class="text-center p-t-90">
-						<a class="txt1" href="/WorkShop2/forgetPassword.html">
+						<a class="txt1" href="/WorkShop2/forgetPassword.php">
 							Mot de passe oublié ?
 						</a>
 					</div>

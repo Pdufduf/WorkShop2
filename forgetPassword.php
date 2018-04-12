@@ -15,6 +15,18 @@
     <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script>
+
+    function myFunction() {
+/*
+            if(isset($_POST['email'])){*/
+                confirm('Email envoyé');
+                /*header("Location: /WorkShop2/index.php");
+                exit;*/
+    }
+
+</script>
 </head>
 <body>
 
@@ -37,8 +49,11 @@
                 </div>
 
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
-                        Envoyer l'email
+                    <button class="login100-form-btn" onclick="myFunction()">
+                        <form class="login100-form validate-form" action="../WorkShop2/sendMail.php" method="post">
+ 
+                            <a href='/WorkShop2/index.php'> Envoyer l'email</a>
+                        </form>
                     </button>
                 </div>
 
@@ -46,6 +61,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 <div id="dropDownSelect1"></div>
