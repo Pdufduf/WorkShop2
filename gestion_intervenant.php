@@ -20,8 +20,8 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-	<p><a href="referent.html">Acceuil</a></p>
-	<p><a href="projet.html">projet</a></p>
+	<p><a href="referent.php">Acceuil</a></p>
+	<p><a href="projet.php">projet</a></p>
 </div>
 <div class="main">
 <B><U>CREATION D'UN INTERVENANT</U></B>

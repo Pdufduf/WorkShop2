@@ -21,8 +21,8 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-	<p><a href="projet.html">projet</a></p>
-	<p><a href="gestion intervenant.html">gestion intervenant</a></p>
+	<p><a href="projet.php">projet</a></p>
+	<p><a href="gestion_intervenant.php">gestion intervenant</a></p>
 </div>
 <div class="main">
 <div style="overflow-x:auto;">
