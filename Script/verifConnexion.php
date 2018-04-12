@@ -44,7 +44,16 @@ if(isset($_POST["email"]) && isset($_POST["pass"])){
         exit();
     }else{
         //Sinon nous signalons une erreur d'identifiant ou de mot de passe
-        echo "Login ou password incorrect";
+        ?>
+
+        <script>
+                window.alert("Login ou mot de passe incorrect");
+
+                window.location.href = "../Student_Connect.php";
+        </script>
+
+        <?php
+
     }
 }
 ?>
