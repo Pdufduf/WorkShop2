@@ -20,7 +20,11 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-	<p><a href="Responsable_pedagogique.php">Accueil</a></p>
+        <h1 class="menu">MENU</h1>
+        <p><a href="Student.php">Accueil</a></p>
+        <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.php">Groupes</a></p>
+        <p><a href="projet.php">Projet</a></p>
 	
 	<footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>

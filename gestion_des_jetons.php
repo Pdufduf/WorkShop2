@@ -20,12 +20,14 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
-	<p><a href="Responsable_pedagogique.php">Accueil</a></p>
-	<p><a href="gestion_intervenant.php">gestion intervenant</a></p>
+        <h1 class="menu">MENU</h1>
+	<p><a href="Resp_Etudiant.php">Accueil</a></p>
+	<p><a href="gestion_intervenant.php">Gestion intervenant</a></p>
+	<p><a href="gestion_des_jetons.php">Gestion des jetons</a></p>
 	
 	<footer>
-          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
-        </footer>
+        <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
+    </footer>
 </div>
 <div class="main">	
 <B><U>Attribué des jetons</B></U>

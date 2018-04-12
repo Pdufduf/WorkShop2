@@ -23,7 +23,7 @@
 <body>
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
     <div id="mySidenav" class="sidenav">
-        <h1>MENU</h1>
+        <h1 class="menu">MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <p><a href="Intervenant.php">Accueil</a></p>
         <p><a href="Intervenant_Reception_Question.php">Demandes</a></p>

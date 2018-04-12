@@ -32,7 +32,7 @@
 	<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 	
     <div id="mySidenav" class="sidenav">
-        <h1>MENU</h1>
+        <h1 class="menu">MENU</h1>
         <p><a href="#">Accueil</a></p>
         <p><a href="#">Demandes</a></p>
         <p><a href="#">Groupes</a></p>

@@ -39,7 +39,7 @@ if(isset($_POST["email"]) && isset($_POST["pass"])){
         $_SESSION['nom'] = $result['nom'];
         $_SESSION['prenom'] = $result['prenom'];
         $_SESSION['email'] = $_POST["email"];
-        //header('Location: ../.php');
+        header('Location: ../Resp_Etudiant.php');
 
         exit();
     }else{
