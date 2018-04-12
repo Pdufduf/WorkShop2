@@ -21,11 +21,17 @@
 <body>
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-<div class="sidenav">
-	<p><a href="Student.html">Home</a></p>
-	<p><a href="Student_Question_Form.html">Formulaire de Question</a></p>
-	<p><a href="Student_Groups.html">Groupe</a></p>
-</div>
+    <div id="mySidenav" class="sidenav">
+        <h1>MENU</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p><a href="Student.html">Accueil</a></p>
+        <p><a href="Student_Question_Form.html">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.html">Groupes</a></p>
+
+        <footer>
+          <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
+        </footer>
+    </div>
 
 <div class="main">
 <form>
