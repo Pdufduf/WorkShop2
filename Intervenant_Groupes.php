@@ -33,5 +33,6 @@
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
     </div>
+	<div id="Main" class="main"?
 </body>
 </html>
