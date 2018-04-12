@@ -542,5 +542,16 @@ iframe {
   }
 }
 
-
-
+.profil{
+  background-color: dodgerblue;
+  opacity: 0.5;
+  color: black;
+  font-size: 23px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}

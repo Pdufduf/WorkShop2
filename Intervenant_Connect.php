@@ -21,14 +21,14 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="Script/verifConnexion.php" method="post">
+				<form class="login100-form validate-form" action="Script/verifIntervenant.php" method="post">
 					<span class="login100-form-logo">
 						<!-- <i class="zmdi zmdi-landscape"></i> -->
 						<img src="images/logos/Epsi1.jpeg" alt="EPSI">
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Se connecter
+						Se connecter en Intervenant
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Entrez votre email">
@@ -52,12 +52,6 @@
 						<button class="login100-form-btn" name="connexion" type="submit" onclick="windowlocation.href='Intervenant.php'">
 							Se connecter
 						</button>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="/WorkShop2/register.php">
-							Créer un compte ?
-						</a>
 					</div>
 
 					<div class="text-center p-t-90">

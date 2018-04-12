@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Se connecter au HelpCenter</title>
+	<title>Se connecter en tant que Responsable Etudiant</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -21,32 +21,44 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="Script/verifRespEtudiant.php" method="post">
 					<span class="login100-form-logo">
+						<!-- <i class="zmdi zmdi-landscape"></i> -->
 						<img src="images/logos/Epsi1.jpeg" alt="EPSI">
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Se connecter en tant que
+						Se connecter en Responsable
 					</span>
 
+					<div class="wrap-input100 validate-input" data-validate = "Entrez votre email">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100" data-placeholder="&#x2709;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Entrez votre mot de passe">
+						<input class="input100" type="password" name="pass" placeholder="Mot de passe">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Se souvenir de moi
+						</label>
+					</div>
+
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-                            <a href="/WorkShop2/Student_Connect.php"> Etudiant </a>
+						<button class="login100-form-btn" name="connexion" type="submit" onclick="windowlocation.href='Resp_Etudiant.php'">
+							Se connecter
 						</button>
 					</div>
 
-                    <div class="container-login100-form-btn p-t-20">
-                        <button class="login100-form-btn">
-                            <a href="/WorkShop2/Intervenant_Connect.php"> Intervenant </a>
-                        </button>
-                    </div>
-
-                    <div class="container-login100-form-btn p-t-20">
-                        <button class="login100-form-btn">
-                            <a href="/WorkShop2/Resp_Etudiant_Connect.php"> Responsable Etudiant </a>
-                        </button>
-                    </div>
+					<div class="text-center p-t-90">
+						<a class="txt1" href="/WorkShop2/forgetPassword.php">
+							Mot de passe oublié ?
+						</a>
+					</div>
 				</form>
 			</div>
 		</div>

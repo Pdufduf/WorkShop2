@@ -14,7 +14,7 @@ $pdo = new PDO(
 //Nous vérifions que l'utilisateur a bien envoyé les informations demandées
 if(isset($_POST["email"]) && isset($_POST["pass"])){
     //Nous allons demander le hash pour cet utilisateur à notre base de données :
-    $query = $pdo->prepare('SELECT mdp FROM etudiant WHERE email = :email');
+    $query = $pdo->prepare('SELECT mdp FROM intervenant WHERE email = :email');
     $query->bindParam(':email', $_POST["email"]);
     $query->execute();
     $result = $query->fetch();
@@ -30,7 +30,7 @@ if(isset($_POST["email"]) && isset($_POST["pass"])){
         session_start();
 
         //Sélection nom, prenom connexion
-        $query = $pdo->prepare('SELECT nom, prenom FROM etudiant WHERE email = :email');
+        $query = $pdo->prepare('SELECT nom, prenom FROM intervenant WHERE email = :email');
         $query->bindParam(':email', $_POST["email"]);
         $query->execute();
         $result = $query->fetch();
@@ -39,7 +39,7 @@ if(isset($_POST["email"]) && isset($_POST["pass"])){
         $_SESSION['nom'] = $result['nom'];
         $_SESSION['prenom'] = $result['prenom'];
         $_SESSION['email'] = $_POST["email"];
-        header('Location: ../Student_Question_Form.php');
+        header('Location: ../Intervenant_Reception_Question.php');
 
         exit();
     }else{
@@ -49,11 +49,11 @@ if(isset($_POST["email"]) && isset($_POST["pass"])){
         <script>
                 window.alert("Login ou mot de passe incorrect");
 
-                window.location.href = "../Student_Connect.php";
+                window.location.href = "../Intervenant_Connect.php";
         </script>
 
         <?php
-
+        
     }
 }
 ?>

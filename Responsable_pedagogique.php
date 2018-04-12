@@ -21,6 +21,7 @@
 <div class="limiter">
 <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 <div class="sidenav">
+<<<<<<< HEAD:Responsable_pedagogique.php
 	<p><a href="projet.html">projet</a></p>
 	<p><a href="gestion_intervenant.html">gestion intervenants</a></p>
 	<p><a href="gestion_des_jetons.html">gestion des jetons</a></p>
@@ -28,6 +29,8 @@
 	<footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
+	<p><a href="projet.php">projet</a></p>
+	<p><a href="gestion_intervenant.php">gestion intervenant</a></p>
 </div>
 <p>ACCUEIL<p><br><br><br><br>
 </table>
