@@ -33,39 +33,45 @@
     </div>
 <div class="main">
 <div style="overflow-x:auto;">
-<table style="width:100%">
-	<tr>
-		<th> Groupe </th>
-		<th> Remplissage </th>
-		<th> Rejoindre </th>
-	</tr>
-	<tr>
-		<td>Groupe 1</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Groupe 2</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Groupe 3</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Groupe 4</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
-	<tr>
-		<td>Groupe 5</td>
-		<td>0/4</td>
-		<td> Button Place Holder </td>
-	</tr>
+	<table style="width:100%">
+		<tr>
+			<th> Groupe </th>
+			<th> Remplissage </th>
+			<th> Noms </th>
+			<th> Rejoindre </th>
+		</tr>
+		<tr>
+			<td>Groupe 1</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 2</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 3</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 4</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 5</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
 
-</table>
+	</table>	
 </div>
 </div>
 </body>
