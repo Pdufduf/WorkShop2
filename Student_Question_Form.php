@@ -24,9 +24,9 @@
     <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <p><a href="Student.html">Accueil</a></p>
-        <p><a href="Student_Question_Form.html">Formulaires de Questions</a></p>
-        <p><a href="Student_Groups.html">Groupes</a></p>
+        <p><a href="Student.php">Accueil</a></p>
+        <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.php">Groupes</a></p>
 
         <footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
@@ -35,15 +35,30 @@
 
 <div class="main">
 <form>
+    <div class="profil">
+        <?php
+        session_start ();
+
+        //Connexion à la base de données
+        //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
+        $pdo = new PDO(
+        'mysql:host=localhost;dbname=helpcenter', 'root', '');
+
+        //Sélection nom, prenom connexion
+        $listeProf = $pdo->prepare('SELECT * FROM intervenant');
+        $listeProf->execute();
+        $resultProf = $listeProf->fetch();
+
+        echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+        ?>
+    </div>
     <div class="h5"> Nom du Groupe : </div>
     <input type="text" class="form-control" id="nomGroupe" placeholder="Entrez votre groupe">
 	<br>
     <div class="h5"> Liste des intervenants : </div>
 	<select name="intervenants" class="btn btn-secondary dropdown-toggle">
-		<option class="dropdown-item" value="dummy@email.com">Dummy1</option>
-		<option class="dropdown-item" value="dummy2@email.com">Dummy2</option>
-		<option class="dropdown-item" value="dummy3@email.com">Dummy3</option>
-		<option class="dropdown-item" value="dummy4@email.com">Dummy4</option>
+        <?php while ($resultProf = $listeProf->fetch()) { ?>
+        <option value="<?php echo$resultProf['email']?>"><?php echo $resultProf['nom'] . " " . $resultProf['prenom']; } ?></option>
 	</select>
 	<br/><br/>
     <div class="h5"> Question : </div>

@@ -23,15 +23,26 @@
     <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <p><a href="Student.html">Accueil</a></p>
-        <p><a href="Student_Question_Form.html">Formulaires de Questions</a></p>
-        <p><a href="Student_Groups.html">Groupes</a></p>
+        <p><a href="Student.php">Accueil</a></p>
+        <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.php">Groupes</a></p>
 
         <footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
     </div>
 <div class="main">
+    <div class="profil">
+        <?php
+        session_start ();
+        //Connexion à la base de données
+        //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
+        $pdo = new PDO(
+            'mysql:host=localhost;dbname=helpcenter', 'root', '');
+
+        echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+        ?>
+    </div>
 <div style="overflow-x:auto;">
 <table style="width:100%">
 	<tr>

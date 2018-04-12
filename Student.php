@@ -23,9 +23,9 @@
     <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <p><a href="Student.html">Accueil</a></p>
-        <p><a href="Student_Question_Form.html">Formulaires de Questions</a></p>
-        <p><a href="Student_Groups.html">Groupes</a></p>
+        <p><a href="Student.php">Accueil</a></p>
+        <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.php">Groupes</a></p>
 
         <footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
@@ -37,7 +37,17 @@
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
-Filler
+    <div class="profil">
+        <?php
+        session_start ();
+        //Connexion à la base de données
+        //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
+        $pdo = new PDO(
+            'mysql:host=localhost;dbname=helpcenter', 'root', '');
+
+        echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+        ?>
+    </div>
 </div>
 
 </body>
