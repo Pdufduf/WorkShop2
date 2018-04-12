@@ -31,7 +31,15 @@
         </footer>
 </div>
 <div class="main">	
-Inserer un projet
+	<input type="file" name="projet" />
+
+    <div class="container-login100-form-btn" style="padding-top: 60px";>
+						<button class="login100-form-btn">
+                            <a href="#"> Importer </a>
+						</button>
+					</div>
+
+
 </div>
 </div>
 </div>
