@@ -30,15 +30,9 @@
 </head>
 <body>
 	<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-	
+
     <div id="mySidenav" class="sidenav">
         <h1 class="menu">MENU</h1>
-        <p><a href="#">Accueil</a></p>
-        <p><a href="#">Demandes</a></p>
-        <p><a href="#">Groupes</a></p>
-
-        <div id="mySidenav" class="sidenav">
-            <h1 style="margin-left: 30px;">MENU</h1>
             <p><a href="Intervenant.php">Accueil</a></p>
             <p><a href="Intervenant_Reception_Question.php">Demandes</a></p>
             <p><a href="Intervenant_Groupes.php">Groupes</a></p>
