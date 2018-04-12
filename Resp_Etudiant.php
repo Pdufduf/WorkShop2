@@ -25,6 +25,7 @@
 	<p><a href="Resp_Etudiant.php">Accueil</a></p>
 	<p><a href="gestion_intervenant.php">Gestion intervenant</a></p>
 	<p><a href="gestion_des_jetons.php">Gestion des jetons</a></p>
+	<p><a href="Resp_Etudiant_Groupe.php">Liste des groupes</a></p>
 
 	<footer>
         <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
