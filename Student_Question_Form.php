@@ -24,9 +24,9 @@
     <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <p><a href="Student.html">Accueil</a></p>
-        <p><a href="Student_Question_Form.html">Formulaires de Questions</a></p>
-        <p><a href="Student_Groups.html">Groupes</a></p>
+        <p><a href="Student.php">Accueil</a></p>
+        <p><a href="Student_Question_Form.php">Formulaires de Questions</a></p>
+        <p><a href="Student_Groups.php">Groupes</a></p>
 
         <footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
