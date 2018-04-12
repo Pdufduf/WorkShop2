@@ -27,10 +27,10 @@
     <div id="mySidenav" class="sidenav">
         <h1>MENU</h1>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <p><a href="Intervenant.php">Accueil</a></p>
-        <p><a href="Intervenant_Reception_Question.php">Demandes</a></p>
-        <p><a href="Intervenant_Groupes.php">Groupes</a></p>
-
+        <p><a href="#">Accueil</a></p>
+        <p><a href="#">Demandes</a></p>
+        <p><a href="#">Groupes</a></p>
+        
         <footer>
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
