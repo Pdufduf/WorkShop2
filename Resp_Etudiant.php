@@ -30,8 +30,20 @@
         <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
     </footer>
 </div>
-    <p>ACCUEIL</p><br><br><br><br>
-</table>
+    <div id="main">
+        <div class="profil">
+            <?php
+            session_start ();
+            echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+            ?>
+        </div>
+        <p class="lead" style="margin-left: 200px;">
+            Bienvenue sur la page du Responsable Etudiant ! <br/>
+            Vous pouvez ici gérer les intervenants des projets, gérer les jetons attribués <br/>
+            aux différents groupes de projets d'élèves et enfin gérer les groupes <br/>
+            d'élèves afin d'en rajouter et d'en supprimer. <br/>
+        </p>
+    </div>
 </div>
 </div>
 </body>

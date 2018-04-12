@@ -30,27 +30,59 @@
     </footer>
 </div>
 <div class="main">
-    <div class="h3">
-        CREATION D'UN INTERVENANT
+    <div class="profil">
+        <?php
+        session_start ();
+
+        //Connexion à la base de données
+        //(via PDO, utilisez la méthode de votre choix comme le type de base de données de votre choix)
+        $pdo = new PDO(
+            'mysql:host=localhost;dbname=helpcenter', 'root', '');
+
+        //Sélection nom, prenom connexion
+        $listeMatiere = $pdo->prepare('SELECT * FROM matiere');
+        $listeMatiere->execute();
+
+        echo "Connecté en tant que " . $_SESSION['nom'] . " " . $_SESSION['prenom'];
+        ?>
     </div>
-<form style="padding-top: 40px;">
-    <div class="h5">Nom du profs :</div>
-	<input type="text">
-	<br><br>
-        <div class="h5">Prenom du profs :</div>
-	<input type="text">
-	<br><br>
-            <div class="h5">matiere enseigné :</div>
-	<input type="text">
-  <br><br>
-                <div class="h5">adresse e-mail  : </div>
-	<input type="text">
-	<br><br>
-                    <div class="h5">mots de passe de connexion : </div>
-	<input type="text">
-	<br><br>
-  <input type="submit">
-</form>
+    <form style="padding-top: 40px;" class="login100-form validate-form" action="Script/addIntervenant.php" method="post">
+        <span class="login100-form-title p-b-34 p-t-27" style="color: black !important;">
+                            Création d'un intervenant
+                        </span>
+
+        <div class="wrap-input100 validate-input" data-validate = "Entrez votre nom" style="border-bottom: 2px solid black;">
+            <input class="input100" type="text" name="nom" placeholder="Nom" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Entrez votre prenom" style="border-bottom: 2px solid black;">
+            <input class="input100" type="text" name="prenom" placeholder="Prenom" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate="Email" style="border-bottom: 2px solid black;">
+            <input class="input100" type="email" name="email" placeholder="Email" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate="Entrez votre mot de passe" style="border-bottom: 2px solid black;">
+            <input class="input100" type="password" name="pass" placeholder="Mot de passe" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate="Entrez votre mot de passe" style="border-bottom: 2px solid black;">
+            <input class="input100" type="password" name="pass2" placeholder="Mot de passe (Recopiez le)" style="color: black !important; background: cornflowerblue;">
+        </div>
+
+        <div class="h5"> Liste des intervenants : </div>
+        <select name="intervenants" class="btn btn-secondary dropdown-toggle">
+            <?php while ($resultMatiere = $listeMatiere->fetch()) { ?>
+            <option value="<?php echo$resultMatiere['email']?>"><?php echo $resultMatiere['nom']; } ?></option>
+        </select>
+
+        <div class="container-login100-form-btn">
+            <button class="login100-form-btn" style="margin-top: 20px;">
+                Créer l'intervenant
+            </button>
+        </div>
+    </form>
 </div>
 </body>
 
