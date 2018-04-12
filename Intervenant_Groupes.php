@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/Side_Bar_Navigation.css">
 <link href="css/calendar.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/Tables.css">
 <?php
   include 'pdo.php';
 ?>
@@ -33,6 +34,54 @@
           <p><a href="../WorkShop2/index.php">Déconnexion</a></p>
         </footer>
     </div>
-	<div id="Main" class="main"?
+	<div id="Main" class="main">
+		<div style="overflow-x:auto;">
+	<table style="width:100%">
+		<tr>
+			<th> Groupe </th>
+			<th> Remplissage </th>
+			<th> Noms </th>
+			<th> Rejoindre </th>
+		</tr>
+		<tr>
+			<td>Groupe 1</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 2</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 3</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 4</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+		<tr>
+			<td>Groupe 5</td>
+			<td>0/4</td>
+			<td> Billy, Bobby, Jimmy, Carl </td>
+			<td> Button Place Holder </td>
+		</tr>
+
+	</table>
+	<button class="login100-form-btn" name="envoyer" type="submit">
+			Cree Groupe
+	</button>
+	<button class="login100-form-btn" name="envoyer" type="submit">
+			Effacer Groupe
+	</button>
+	</div>
+	</div>
 </body>
 </html>
